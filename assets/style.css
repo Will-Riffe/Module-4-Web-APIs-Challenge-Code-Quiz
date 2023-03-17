@@ -1,0 +1,72 @@
+:root {
+    --innie: #9B9B7A;
+    --outtie: #FFF44F;
+    --text-c: #746d63;
+    --hd-gradient: linear-gradient(180deg, var(--innie), var(--outtie));
+    --head-shadow: 0px 3px 4px 5px var(--innie);
+    --bd-gradient: linear-gradient(90deg, var(--outtie), var(--innie));
+    --bd-shadow: 0px 3px 4px 5px var(--innie);
+}
+
+*{
+    font-family:monospace;
+}
+
+header {
+    width:100vw;
+    height:auto;
+    padding-left:50px;
+    background-color: var(--innie);
+    color: var(--outtie);
+    background-image: var(--hd-gradient);
+    box-shadow: var(--head-shadow);
+    text-shadow: 2px 0 var(--text-c), -2px 0 var(--text-c), 0 2px var(--text-c), 0 -2px var(--text-c),
+             2px 2px var(--text-c), -2px -2px var(--text-c), 2px -2px var(--text-c), -2px 2px var(--text-c);
+}
+
+
+body {
+    background-image: var(--bd-gradient);
+    box-shadow: var(--bd-shadow);
+}
+
+main.body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+}
+
+article.card {
+    display:flex;
+    width:80%;
+    height:auto;
+    align-items:center;
+    justify-content: center;
+    flex-wrap:wrap;
+    background-color: var(--innie);
+    color: var(--outtie);
+    background-image: var(--hd-gradient);
+    box-shadow: var(--head-shadow);
+}
+h2.card-title {
+    text-shadow: 2px 0 var(--text-c), -2px 0 var(--text-c), 0 2px var(--text-c), 0 -2px var(--text-c),
+    2px 2px var(--text-c), -2px -2px var(--text-c), 2px -2px var(--text-c), -2px 2px var(--text-c);
+}
+
+.card-body {
+    display:flex;
+    flex-direction:column;
+    margin:10px;
+    align-items:center;
+    justify-content:center;
+}
+
+.btn-primary {
+    margin:10px;
+    background-image: var(--hd-gradient);
+    box-shadow: var(--head-shadow);
+    color:white;
+    font-weight:bold;
+}

@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        
-        <script src="" async defer></script>
-    </body>
+    <!--normalize.css-->
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css"/>
+
+    <!--CSS from Bootstrap 4.6-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <!--Personal Stylesheet-->
+    <link rel="stylesheet" href="./assets/style.css" />
+
+  </head>
+  
+  <body>
+
+    <header>
+      <h1>
+        <em> WebDev Quiz </em>
+      </h1>
+    </header>
+    
+    <main class="body">
+        <article class="card">
+            <div class="card-body">
+              <h2 class="card-title"></h2>
+              <ul class="choices"></ul>
+            </div>
+        </article>
+      </main>
+      
+
+    <script src="./assets/main.js" async defer></script>
+  </body>
 </html>
