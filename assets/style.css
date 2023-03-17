@@ -24,7 +24,6 @@ header {
              2px 2px var(--text-c), -2px -2px var(--text-c), 2px -2px var(--text-c), -2px 2px var(--text-c);
 }
 
-
 body {
     background-image: var(--bd-gradient);
     box-shadow: var(--bd-shadow);
@@ -67,6 +66,7 @@ h2.card-title {
     margin:10px;
     background-image: var(--hd-gradient);
     box-shadow: var(--head-shadow);
-    color:white;
+    color:black;
     font-weight:bold;
+    border:var(--text-c);
 }

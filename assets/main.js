@@ -2,6 +2,7 @@
 const quizContainer = document.querySelector(".quiz");
 const questionElement = document.querySelector(".question");
 const choicesElement = document.querySelector(".choices");
+const startButton = document.getElementById("start");
 const timeElement = document.getElementById("time");
 const timerDuration = 60; // unit = seconds
 
@@ -23,3 +24,4 @@ const quizData = [
         answer: "JavaScript"
     }
 ];
+
