@@ -1,10 +1,10 @@
 //Defining Variables
 const quizContainer = document.querySelector(".quiz");
-const questionElement = document.querySelector(".question");
+const questionElement = document.querySelector(".questions");
 const choicesElement = document.querySelector(".choices");
 const startButton = document.getElementById("start");
 const timeElement = document.getElementById("time");
-let timerDuration = 5; // unit = seconds
+let timerDuration = 50; // unit = seconds
 
 // Defines the quiz questions and answer choices
 const quizData = [
@@ -31,7 +31,28 @@ function startQuiz() {
     startButton.addEventListener("click", function() {
         startButton.style.display = "none";
         startTimer();
+        displayQuestion();
     });
+
+    //display the questions and answers
+    function displayQuestion() {
+        //retrieves first question index
+        let currentQuestionIndex = 0;
+
+        //retrieves first quiz question object
+        const currentQuestion = quizData[currentQuestionIndex];
+
+        //displays the Question
+        questionElement.textContent = currentQuestion.question;
+
+        //displays answer choices
+        for (let i = 0; i <currentQuestion.choices.length; i++) {
+            const choice = currentQuestion.choices[i];
+            const li = document.createElement("li");
+            li.textContent = choice;
+            choicesElement.appendChild(li);
+        }
+    }
 
     function startTimer() {
         var timer = setInterval(function() {
@@ -43,6 +64,8 @@ function startQuiz() {
             }
         }, 1000);
     }
+
+
 
 }
 startQuiz();

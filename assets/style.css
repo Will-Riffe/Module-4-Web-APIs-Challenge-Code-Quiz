@@ -49,7 +49,8 @@ article.card {
     background-image: var(--hd-gradient);
     box-shadow: var(--head-shadow);
 }
-h2.card-title {
+h2.card-title,
+.card-body {
     text-shadow: 2px 0 var(--text-c), -2px 0 var(--text-c), 0 2px var(--text-c), 0 -2px var(--text-c),
     2px 2px var(--text-c), -2px -2px var(--text-c), 2px -2px var(--text-c), -2px 2px var(--text-c);
 }
@@ -69,4 +70,10 @@ h2.card-title {
     color:black;
     font-weight:bold;
     border:var(--text-c);
+}
+
+li {
+    justify-content: start;
+    margin-top: 20px;
+    list-style-type: none;
 }
