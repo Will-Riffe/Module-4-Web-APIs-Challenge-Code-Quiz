@@ -25,3 +25,11 @@ const quizData = [
     }
 ];
 
+function startQuiz() {
+    //hide the start btn on click
+    console.log(startButton);
+    startButton.addEventListener("click", function() {
+        startButton.style.display = "none";
+    });
+}
+startQuiz();
