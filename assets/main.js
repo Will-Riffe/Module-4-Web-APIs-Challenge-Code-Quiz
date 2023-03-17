@@ -4,7 +4,7 @@ const questionElement = document.querySelector(".question");
 const choicesElement = document.querySelector(".choices");
 const startButton = document.getElementById("start");
 const timeElement = document.getElementById("time");
-const timerDuration = 60; // unit = seconds
+let timerDuration = 5; // unit = seconds
 
 // Defines the quiz questions and answer choices
 const quizData = [
@@ -30,6 +30,19 @@ function startQuiz() {
     console.log(startButton);
     startButton.addEventListener("click", function() {
         startButton.style.display = "none";
+        startTimer();
     });
+
+    function startTimer() {
+        var timer = setInterval(function() {
+            timerDuration--;
+            timeElement.textContent = timerDuration;
+
+            if (timerDuration <= 0) {
+                clearInterval(timer);
+            }
+        }, 1000);
+    }
+
 }
 startQuiz();
