@@ -2,8 +2,10 @@
 const quizContainer = document.querySelector(".quiz");
 const questionElement = document.querySelector(".question");
 const choicesElement = document.querySelector(".choices");
+const timeElement = document.getElementById("time");
+const timerDuration = 60; // unit = seconds
 
-// Define the quiz questions and answer choices
+// Defines the quiz questions and answer choices
 const quizData = [
     {
         question: "What does HTML stand for?",
