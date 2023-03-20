@@ -64,7 +64,7 @@ h2.card-title,
 }
 
 .btn-primary {
-    margin:10px;
+    margin:20px;
     background-image: var(--hd-gradient);
     box-shadow: var(--head-shadow);
     color:black;
@@ -72,7 +72,7 @@ h2.card-title,
     border:var(--text-c);
 }
 
-li {
+button {
     justify-content: start;
     margin-top: 20px;
     list-style-type: none;
