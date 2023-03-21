@@ -78,7 +78,7 @@ function startQuiz() {
                     //incorrect answer time penalty
                     timerDuration -= 10;
                 }
-                if (currentQuestionIndex === 3 && score === 3 || timerDuration === 0) {
+                if (currentQuestionIndex === 3 && score === 3 || timerDuration <= 0) {
                     showScore();
                 }
             });
